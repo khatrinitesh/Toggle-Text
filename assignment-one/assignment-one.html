@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Repository</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<div class="container">
+		<p>Click the button to swap the text of the DIV element:</p>
+		<button onclick='myfunction()'>Click me</button>
+		<p id="demo_txt">Hello</p>
+
+		<script type='text/javascript'>
+			var example = document.getElementById('demo_txt');
+			function myfunction(){
+				if(example.innerHTML === 'Hello'){
+					example.innerHTML = 'Ambab';
+				}
+				else{
+					example.innerHTML = 'Hello';
+				}
+			}
+		</script>
+	</div>
+</body>
+</html>
